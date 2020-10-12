@@ -65,7 +65,7 @@ public class Dessin extends View {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        points.add(new Point(event.getX(), event.getY(), Color.RED, getE()));
+        points.add(new Point(event.getX(), event.getY(), getC(), getE()));
         invalidate();
         return true; //phai thay bang trua thi no moi lien tiep duoc
     }
